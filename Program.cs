@@ -6,7 +6,7 @@ namespace Exercicio_Carro
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            hb20 = new Carro();
         }
     }
 }
