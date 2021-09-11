@@ -1,0 +1,13 @@
+C:\Users\simoes\Desktop\CELIANE.SIMOES\Exercicio Carro\obj\Debug\netcoreapp3.1\Exercicio Carro.csproj.AssemblyReference.cache
+C:\Users\simoes\Desktop\CELIANE.SIMOES\Exercicio Carro\obj\Debug\netcoreapp3.1\Exercicio Carro.AssemblyInfoInputs.cache
+C:\Users\simoes\Desktop\CELIANE.SIMOES\Exercicio Carro\obj\Debug\netcoreapp3.1\Exercicio Carro.AssemblyInfo.cs
+C:\Users\simoes\Desktop\CELIANE.SIMOES\Exercicio Carro\obj\Debug\netcoreapp3.1\Exercicio Carro.csproj.CoreCompileInputs.cache
+C:\Users\simoes\Desktop\CELIANE.SIMOES\Exercicio Carro\bin\Debug\netcoreapp3.1\Exercicio Carro.exe
+C:\Users\simoes\Desktop\CELIANE.SIMOES\Exercicio Carro\bin\Debug\netcoreapp3.1\Exercicio Carro.deps.json
+C:\Users\simoes\Desktop\CELIANE.SIMOES\Exercicio Carro\bin\Debug\netcoreapp3.1\Exercicio Carro.runtimeconfig.json
+C:\Users\simoes\Desktop\CELIANE.SIMOES\Exercicio Carro\bin\Debug\netcoreapp3.1\Exercicio Carro.runtimeconfig.dev.json
+C:\Users\simoes\Desktop\CELIANE.SIMOES\Exercicio Carro\bin\Debug\netcoreapp3.1\Exercicio Carro.dll
+C:\Users\simoes\Desktop\CELIANE.SIMOES\Exercicio Carro\bin\Debug\netcoreapp3.1\Exercicio Carro.pdb
+C:\Users\simoes\Desktop\CELIANE.SIMOES\Exercicio Carro\obj\Debug\netcoreapp3.1\Exercicio Carro.dll
+C:\Users\simoes\Desktop\CELIANE.SIMOES\Exercicio Carro\obj\Debug\netcoreapp3.1\Exercicio Carro.pdb
+C:\Users\simoes\Desktop\CELIANE.SIMOES\Exercicio Carro\obj\Debug\netcoreapp3.1\Exercicio Carro.genruntimeconfig.cache
