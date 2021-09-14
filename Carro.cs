@@ -9,33 +9,22 @@ namespace Exercicio_Carro
 {
     class Carro
     {
-
         public string Nome;
         public string Cor;
         public string Modelo;
-        public double Preco;
-        public double valorComDesconto;
-        public double valorDoDesconto;
-        public string retornoMetodoToString;
-
-
-        public Carro(string nome, string cor, string modelo, double preco)
-        {
-            Nome = nome;
-            Cor = cor;
-            Modelo = modelo;
-            Preco = preco;
-        }
+        public double Preco;       
 
         public Carro()
         {
         }
 
-        public void Andar(int kmAPercorrer)
-        {
-            for (int i = 0; i <= kmAPercorrer; i ++)
-            {
-                Console.WriteLine("Percorrido " + ( i + 100) + " Km!");
+     private static string  kmPercorrido;
+
+        public void Andar(int kmPercorrido) {
+            int i = 0;
+            while (i <= kmPercorrido){
+                Console.WriteLine("Percorrido " + (kmPercorrido + 100) + " Km!");
+                i++;
             }
         }
 
@@ -43,18 +32,18 @@ namespace Exercicio_Carro
         {
             if (radar == "sim")
             {
-                Console.WriteLine("Radar a frente - reduzindo velocidade");
+             Console.WriteLine("Radar a frente - reduzindo velocidade");
             }
             else
             {
-                Console.WriteLine("Tudo Ok! Pisa fundo Bino!!!");
+             Console.WriteLine("Tudo Ok! Pisa fundo Bino!!!");
             }
         }
 
         public void Parar(string testeFinalizado)
         {
             if(testeFinalizado == "sim"){
-                Console.WriteLine(" O carro parou!");
+            Console.WriteLine(" O carro parou!");
             }
         }
 
@@ -74,15 +63,14 @@ namespace Exercicio_Carro
         {
             if (cor == "branco" || cor == "preto")
             {
-                double valorDoDesconto = this.Preco * 0.10;
-                double valorComDesconto = this.Preco - valorDoDesconto;
-                this.Preco = valorComDesconto;
+                double calculoDesconto = this.Preco * 0.10;
+                double precoComDesconto = this.Preco - calculoDesconto;
+                this.Preco = precoComDesconto;
                 return this.ToString();
             }
             else
             {
-                var retornoMetodoToString = ToString();
-                return retornoMetodoToString;
+             return ToString();
             }
         }
                 
