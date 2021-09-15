@@ -8,7 +8,7 @@ namespace Exercicio_Carro
         static void Main()
         {
             Carro carro = new Carro();
-            
+
 
             //Console.WriteLine("Por gentileza insira os dados do veiculo");
             //Console.Write("Nome: ");
@@ -23,20 +23,21 @@ namespace Exercicio_Carro
             //Console.Write("Preço: ");
             //carro.Preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            Console.Write("Informar a quantidade de KM percorridos e a cada quilometro percorrido imprimir o resultado:");
-            carro.Andar(int.Parse(Console.ReadLine()));
+            //Console.Write("Informar a quantidade de KM percorridos e a cada quilometro percorrido imprimir o resultado:");
+            //carro.Andar(int.Parse(Console.ReadLine()));
 
             //Console.Write("Informe se há radar a frente:");
-            //carro.RadarNaFrente(Console.ReadLine());
+            //carro.RadarNaFrente(Boolean.Parse(Console.ReadLine()));
 
-            //Console.Write("Test Drive finalizado: ");
-            //carro.Parar(Console.ReadLine());
+            //carro.Parar();
 
-            //Console.WriteLine ("Descrição para comprador: " + carro.AplicarDesconto(carro.Cor));
-          
+            carro.Preco = 1000.00;
+            carro.Cor = "branco";
+           Console.WriteLine ("Descrição para comprador: " + carro.AplicarDesconto(carro.Cor));
 
 
-            
+
+
 
 
 

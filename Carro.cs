@@ -9,52 +9,48 @@ namespace Exercicio_Carro
 {
     class Carro
     {
-        public string Nome;
-        public string Cor;
-        public string Modelo;
-        public double Preco;       
+        public string Nome {get; set;}
+        public string Cor { get; set;}
+        public string Modelo { get; set;}
+        public double Preco { get; set;}
 
         public Carro()
         {
         }
 
-     private static string  kmPercorrido;
-
-        public void Andar(int kmPercorrido) {
+        public void Andar(int kmPercorrido)
+        {
             int i = 0;
-            while (i <= kmPercorrido){
-                Console.WriteLine("Percorrido " + (kmPercorrido + 100) + " Km!");
+            while (i <= kmPercorrido)
+            {
                 i++;
+                Console.WriteLine("Percorrido " + (i + 99) + " Km!");
             }
         }
-
-        public void RadarNaFrente(string radar)
+        public void RadarNaFrente(bool radar) 
         {
-            if (radar == "sim")
-            {
-             Console.WriteLine("Radar a frente - reduzindo velocidade");
-            }
-            else
+
+            if (!radar) //radar == false
             {
              Console.WriteLine("Tudo Ok! Pisa fundo Bino!!!");
+                return;
             }
-        }
+            Console.WriteLine("Radar a frente - reduzindo velocidade");
+        }    
 
-        public void Parar(string testeFinalizado)
+        public void Parar() 
         {
-            if(testeFinalizado == "sim"){
-            Console.WriteLine(" O carro parou!");
-            }
+        Console.WriteLine(" O carro parou!");
         }
 
         public override string ToString()
         {
             return " Nome: "
-                + Nome
+                + this.Nome
                 + " , Cor: "
-                + Cor
+                + this.Cor
                 + " , Modelo:"
-                + Modelo
+                + this.Modelo
                 + " , Preço:R$ "
                 + this.Preco;
         }
@@ -63,17 +59,17 @@ namespace Exercicio_Carro
         {
             if (cor == "branco" || cor == "preto")
             {
-                double calculoDesconto = this.Preco * 0.10;
-                double precoComDesconto = this.Preco - calculoDesconto;
-                this.Preco = precoComDesconto;
+                this.Preco = this.CalcularDesconto(this.Preco);
                 return this.ToString();
             }
-            else
-            {
              return ToString();
-            }
         }
-                
-    }
+        public double CalcularDesconto(double precoOriginal)
+        {
+            //return precoOriginal - (precoOriginal * 0.10);
+            double precoReduzido = precoOriginal - (precoOriginal * 0.10);
+            return precoReduzido;
+        }
+    }   
 }
 
